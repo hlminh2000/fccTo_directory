@@ -2,7 +2,7 @@ const appContainer = document.getElementById("app");
 
 // be nice or else!!! :D
 const users = [
-  // example.
+  // example. Copy everything from line 7 to 11. Paste it after the last person.
   /*
   {
     name: "someone",
@@ -10,6 +10,11 @@ const users = [
     github: "@johndoe",
   },
   */
+  {
+    name: "Minh Ha",
+    bio: "I am an awesome person",
+    github: "@hlminh2000",
+  },
   {
     name: "Justin Sane",
     bio:
@@ -25,7 +30,7 @@ const toHtml = users =>
         <div class="is-size-2"> ${user.name} </div>
         <div class="is-size-4">
           <img class="octocat" src="${"https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"}"/>
-          <a href="http://github.com/${user.github.substr(1)}">${
+          <a href="http://github.com/${user.github.substr(1)}" target="_blank">${
         user.github
       }</a>
         </div>
