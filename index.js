@@ -21,6 +21,11 @@ const users = [
       "⚛️ Senior JS Developer @TelusDigital || @FreeCodeCamp core || Working on my own garden. Cannot care if your side of the hedge seems greener. || INTJ-A Úlfhéðin",
     github: "@hallaathrad"
   }
+  {
+    name: "Adam Rogers",
+    bio: "Professional wizard. Harry Potter has nothing on me.",
+    github: "@aroger7",
+  },
 ];
 
 const toHtml = users =>
