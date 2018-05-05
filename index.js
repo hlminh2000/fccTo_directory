@@ -22,10 +22,17 @@ const users = [
     github: "@hallaathrad"
   },
   {
+<<<<<<< HEAD
     name: "Adam Rogers",
     bio: "Professional wizard. Harry Potter has nothing on me.",
     github: "@aroger7",
   },
+=======
+    name: "Andrew",
+    bio: "Jr Front-end web developer; Student of @FreeCodeCamp; Coffee Drinker",
+    github: "@andrew-mcintosh",
+  }
+>>>>>>> a5c08521fa3ed6ca78807b6fe57062057eceff29
 ];
 
 const toHtml = users =>
