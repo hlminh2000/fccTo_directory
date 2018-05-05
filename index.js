@@ -45,20 +45,26 @@ const users = [
 ];
 
 const toHtml = users =>
-  users.map(
-    user =>
-      `<div class="card box">
-        <div class="is-size-2"> ${user.name} </div>
-        <div class="is-size-4">
-          <img class="octocat" src="${"https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"}"/>
-          <a href="http://github.com/${user.github.substr(1)}" target="_blank">${
-        user.github
-      }</a>
+  users
+    .sort(
+      (a, b) =>
+        a.name < b.name ? -1 :
+        a.name > b.name ? 1 : 0
+    )
+    .map(
+      user =>
+        `<div class="card box">
+          <div class="is-size-2"> ${user.name} </div>
+          <div class="is-size-4">
+            <img class="octocat" src="${"https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"}"/>
+            <a href="http://github.com/${user.github.substr(1)}" target="_blank">${
+          user.github
+        }</a>
+          </div>
+          <div class="is-size-6">${user.bio}</div>
         </div>
-        <div class="is-size-6">${user.bio}</div>
-      </div>
-      `
-  );
+        `
+    );
 
 const render = users => {
   appContainer.innerHTML = toHtml(users).join("\n");
