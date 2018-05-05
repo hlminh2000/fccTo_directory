@@ -30,7 +30,7 @@ const users = [
     name: "Sylvain Junca",
     bio: "I am canelés baker and I want to become a Developer",
     github: "@SylvainJunca",
- },
+  },
   {
     name: "Andrew",
     bio: "Jr Front-end web developer; Student of @FreeCodeCamp; Coffee Drinker",
@@ -41,6 +41,11 @@ const users = [
     bio:
       "Entry-Level Developer || Working towards being the one of greatest js wizards.",
     github: "@mayanksuchde"
+  },
+  {
+    name: "Adam Rogers",
+    bio: "Professional wizard. Harry Potter has nothing on me.",
+    github: "@aroger7",
   },
   {
     name: "Jonathan Cunanan",
