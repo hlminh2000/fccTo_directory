@@ -20,6 +20,11 @@ const users = [
     bio:
       "⚛️ Senior JS Developer @TelusDigital || @FreeCodeCamp core || Working on my own garden. Cannot care if your side of the hedge seems greener. || INTJ-A Úlfhéðin",
     github: "@hallaathrad"
+  },
+  {
+    name: "Andrew",
+    bio: "Jr Front-end web developer; Student of @FreeCodeCamp; Coffee Drinker",
+    github: "@andrew-mcintosh",
   }
 ];
 
