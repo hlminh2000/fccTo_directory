@@ -11,6 +11,11 @@ const users = [
   },
   */
   {
+    name: "Pulkit Kumar",
+    bio: "Full Stack developer and learning Android and iOS development also",
+    github: "@droidpulkit",
+  },
+  {
     name: "Minh Ha",
     bio: "I am an awesome person",
     github: "@hlminh2000",
