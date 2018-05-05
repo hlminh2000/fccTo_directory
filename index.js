@@ -19,7 +19,7 @@ const users = [
   {
     name: "Mayank Suchade",
     bio:
-      "Entry-Level Developer||Not a bad Cook.",
+      "Entry-Level Developer || Working towards being the one of greatest js wizards.",
     github: "@mayanksuchde"
   }
 ];
