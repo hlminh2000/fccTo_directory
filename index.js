@@ -42,6 +42,11 @@ const users = [
     bio: "Professional wizard. Harry Potter has nothing on me.",
     github: "@aroger7",
   },
+  {
+    name: "Jonathan Cunanan",
+    bio: "Learning code",
+    github: "@jcunanan05"
+  }
 ];
 
 const toHtml = users =>
