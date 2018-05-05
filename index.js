@@ -22,6 +22,11 @@ const users = [
     github: "@hallaathrad"
   },
   {
+    name: "Sylvain Junca",
+    bio: "I am canelés baker and I want to become a Developer",
+    github: "@SylvainJunca",
+ },
+  {
     name: "Andrew",
     bio: "Jr Front-end web developer; Student of @FreeCodeCamp; Coffee Drinker",
     github: "@andrew-mcintosh",
