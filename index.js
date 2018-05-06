@@ -11,6 +11,11 @@ const users = [
   },
   */
   {
+    name: "Pulkit Kumar",
+    bio: "Full Stack developer and learning Android and iOS development also",
+    github: "@droidpulkit",
+  },
+  {
     name: "Minh Ha",
     bio: "I am an awesome person",
     github: "@hlminh2000",
@@ -22,6 +27,32 @@ const users = [
     github: "@hallaathrad"
   },
   {
+    name: "Sylvain Junca",
+    bio: "I am canelés baker and I want to become a Developer",
+    github: "@SylvainJunca",
+  },
+  {
+    name: "Andrew",
+    bio: "Jr Front-end web developer; Student of @FreeCodeCamp; Coffee Drinker",
+    github: "@andrew-mcintosh",
+  },
+  {
+    name: "Mayank Suchade",
+    bio:
+      "Entry-Level Developer || Working towards being the one of greatest js wizards.",
+    github: "@mayanksuchde"
+  },
+  {
+    name: "Adam Rogers",
+    bio: "Professional wizard. Harry Potter has nothing on me.",
+    github: "@aroger7",
+  },
+  {
+    name: "Jonathan Cunanan",
+    bio: "Learning code",
+    github: "@jcunanan05"
+  },
+  {
     name: "Erkand Imeri",
     bio:
       "⚛️ Full Stack Developer @SKAB || @FreeCodeCamp || Hiking, Reading, Jogging.",
@@ -30,20 +61,26 @@ const users = [
 ];
 
 const toHtml = users =>
-  users.map(
-    user =>
-      `<div class="card box">
-        <div class="is-size-2"> ${user.name} </div>
-        <div class="is-size-4">
-          <img class="octocat" src="${"https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"}"/>
-          <a href="http://github.com/${user.github.substr(1)}" target="_blank">${
-        user.github
-      }</a>
+  users
+    .sort(
+      (a, b) =>
+        a.name < b.name ? -1 :
+        a.name > b.name ? 1 : 0
+    )
+    .map(
+      user =>
+        `<div class="card box">
+          <div class="is-size-2"> ${user.name} </div>
+          <div class="is-size-4">
+            <img class="octocat" src="${"https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"}"/>
+            <a href="http://github.com/${user.github.substr(1)}" target="_blank">${
+          user.github
+        }</a>
+          </div>
+          <div class="is-size-6">${user.bio}</div>
         </div>
-        <div class="is-size-6">${user.bio}</div>
-      </div>
-      `
-  );
+        `
+    );
 
 const render = users => {
   appContainer.innerHTML = toHtml(users).join("\n");
